@@ -14,16 +14,27 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 3px solid red;
   /* parameters for the header section */
 }
 
-.logo_place_header {
+.logo {
   width: 154px;
   height: 31px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid red;
+}
+
+.logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
-  z-index: 1;
+  border: 3px solid red;
 }
 
 .header__title {
@@ -37,17 +48,20 @@
   justify-content: flex-start;
   align-items: center;
   z-index: 1;
+  border: 3px solid red;
 }
 
 .header__subtitle {
-  width: 338px;
+  width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1
+  z-index: 1;
+  margin: 0;
+  border: 3px solid red;
 ;
 }
 
@@ -61,7 +75,7 @@ a.header__link:link {
 }
 
 a.header__link:visited {
-  color:#1a6bd4;
+  color:#144380;
   text-decoration: none;
 }
 
@@ -69,33 +83,34 @@ a.header__link:hover {
   text-decoration: underline;
 }
 
-
-.header__main-illustration {
-  width: 608px;
-  height: 608px;
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  object-fit: contain;
-}
-
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   position: absolute;
   top: 64px;
-  display: flex;
-  justify-content: flex-end;
+  right: 0;
   height: 568px;
   width: 568px;
-  color: #2f80ed;
+  background-color: #2f80ed;
+  border: 3px solid red;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: contain;
+  background-position: center;
+  border: 3px solid red;
 }
 
 .two-columns {
   width: 80%;
+  margin: 100px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 100px;
+  justify-content: space-between;
+  border: 3px solid red;
 }
 
 .two-columns__brief {
@@ -105,32 +120,174 @@ a.header__link:hover {
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  justify-content: space-around;
-  margin-top: 100px;
+  margin: 0;
+  border: 3px solid red;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  border: 3px solid red;
+}
+
+.two-columns__paragraph:first-child {
+  margin-top: 0;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-
+  margin: 30px 0 0;
+  border: 3px solid red;
 }
 
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+  border: 3px solid red;
 }
 
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  width: 60%;
+  margin: 100px auto 20px;
+  text-align: center;
+  border: 3px solid red;
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  margin: 0 auto 60px;
+  text-align: center;
+  border: 3px solid red;
+}
+
+.table:last-child {
+  margin-bottom: 100px;
+}
+
+.table {
+  width: 1100px;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid red;
+}
+
+.table__cell {
+  width: 250px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  border: 3px solid yellow;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  width: 250px;
+  margin: 0;
+  border: 3px solid blue;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+  width: 250px;
+  margin: 20px 0 0;
+  border: 3px solid green;
+}
+
+.feynman {
+  height: 790px;
+  background-color: #f2f2f2;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: bottom left;
+  position: relative;
+  border: 3px solid red;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  width: 775px;
+  text-align: center;
+  margin: 100px auto 0;
+  border: 3px solid red;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 70px 0 0;
+  border: 3px solid red;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  border: 3px solid red;
+}
+
+.feynman__link:link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman__link:visited {
+  color:#144380;
+  text-decoration: none;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+}
+
+.section-title_theme_dark {
+  color: white;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  border: 3px solid red;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 3px solid red;
+}
+
+.table_theme_dark {
+  border: 3px solid red;
+}
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {+
@@ -138,4 +295,19 @@ a.header__link:hover {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  border: 3px solid red;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  border: 3px solid red;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  border: 3px solid red;
 }
