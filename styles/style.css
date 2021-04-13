@@ -59,7 +59,7 @@
 }
 
 .header__link {
-  text-decoration: #2f80ed
+  text-decoration: #2f80ed;
 }
 
 a.header__link:link {
@@ -186,7 +186,6 @@ a.header__link:hover {
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
-  ;
 }
 
 .feynman {
