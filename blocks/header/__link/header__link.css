@@ -1,9 +1,16 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
 }
 
 .header__link:hover {
-  color: #144380;
-  text-decoration: underline;
+  color: #84b6f7;
+}
+
+.header__link:hover > .right-arrow-icon svg {
+  animation: .4s right-ease  infinite alternate;
+  -webkit-animation: .4s right-ease infinite alternate;
 }

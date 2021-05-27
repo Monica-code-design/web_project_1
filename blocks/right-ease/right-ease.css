@@ -1,0 +1,8 @@
+@keyframes right-ease {
+  0%{transform:translateX(0px)}
+  100%{transform:translateX(8px)}
+}
+@-webkit-keyframes right-ease {
+  0%{-webkit-transform:translateX(0px)}
+  100%{-webkit-transform:translateX(8px)}
+}

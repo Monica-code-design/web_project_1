@@ -1,4 +1,7 @@
 @import url(../page/page.css);
+@import url(../rotation/rotation.css);
+@import url(../right-ease/right-ease.css);
+@import url(../content/content.css);
 @import url(../description/description.css);
 @import url(../digits/digits.css);
 @import url(../feynman/feynman.css);

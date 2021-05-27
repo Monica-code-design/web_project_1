@@ -7,4 +7,24 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.feynman__link:hover {
+  color: #84b6f7;
+}
+
+.feynman__link:hover > .right-arrow-icon svg {
+  animation: .4s right-ease  infinite alternate;
+  -webkit-animation: .4s right-ease infinite alternate;
+}
+
+.right-arrow-icon svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
 }
