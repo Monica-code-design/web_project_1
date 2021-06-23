@@ -8,6 +8,4 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
-  -webkit-animation: rotation linear 20s infinite;
-          animation: rotation linear 20s infinite;
 }
