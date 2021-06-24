@@ -10,5 +10,5 @@
 }
 
 .footer__column-link:hover {
-  color: #bebdbd;
+  opacity: .5;
 }

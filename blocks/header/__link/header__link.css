@@ -7,5 +7,5 @@
 }
 
 .header__link:hover {
-  color: #84b6f7;
+  opacity: .5;
 }
