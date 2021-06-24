@@ -4,7 +4,4 @@
   width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
-  align-content: space-between;
-  position: relative;
-  z-index: 1;
 }
