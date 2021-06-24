@@ -8,6 +8,8 @@
   -webkit-transition: opacity .2s linear;
   -o-transition: opacity .2s linear;
   transition: opacity .2s linear;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .khan__buy-link:hover {

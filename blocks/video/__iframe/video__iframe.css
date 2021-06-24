@@ -1,6 +1,10 @@
 .video__iframe {
   width: 515px;
   height: 316px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .video__iframe:nth-of-type(2n){
